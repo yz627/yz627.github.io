@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>yzBlog</title><link>https://yz627.github.io/</link><description>Recent content on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 18 Oct 2025 21:45:13 +0800</lastBuildDate><atom:link href="https://yz627.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>博客标题</title><link>https://yz627.github.io/posts/go/reflect/</link><pubDate>Sat, 18 Oct 2025 21:45:13 +0800</pubDate><guid>https://yz627.github.io/posts/go/reflect/</guid><description>&lt;h2 id="reflecttype"&gt;&lt;code&gt;reflect.Type&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;代表变量的类型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代表变量的类型
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"&gt;&lt;code class="language-GO" data-lang="GO"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;func&lt;/span&gt; main() {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ptr := new(&lt;span style=""&gt;int&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ty := reflect.TypeOf(ptr)&lt;span style="font-style:italic"&gt;// 返回reflect.Type类型&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; log.println(ty.kind())&lt;span style=""&gt;//查看类型，这里为ptr,代表指针类型&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; log.println(ty.Elem())&lt;span style=""&gt;//这里获取指针指向的值的类型&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="reflectvalue"&gt;&lt;code&gt;reflect.Value&lt;/code&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="reflectvalue"&gt;&lt;code&gt;reflect.Value&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;代表变量的值&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="font-weight:bold"&gt;func&lt;/span&gt; main() {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ptr := 20
