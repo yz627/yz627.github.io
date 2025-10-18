@@ -10,7 +10,7 @@
   margin: 16px 0;
   overflow: auto;
   font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.45;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -68,7 +68,7 @@
   padding: 0 !important;
   border: none !important;
   border-radius: 0 !important;
-  font-size: 14px !important;
+  font-size: 17px !important;
   line-height: 1.45 !important;
   color: #24292f !important;
 }
@@ -122,7 +122,7 @@
   border: 1px solid #d0d7de;
   border-radius: 6px;
   padding: 0.2em 0.4em;
-  font-size: 85%;
+  font-size: 80%;
   color: #24292f !important;
   font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
   /* 确保行内代码不被语法高亮影响 */
@@ -188,9 +188,9 @@
   }
   
   .markdown-body code:not(pre code) {
-    background-color: #21262d !important;
+    background-color: #f8f9fb !important;
     border-color: #30363d;
-    color: #c9d1d9 !important;
+    color: #191a1b !important;
     font-weight: normal;
   }
 }
