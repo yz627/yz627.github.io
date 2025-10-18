@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>yzBlog</title><link>https://yz627.github.io/</link><description>Recent content on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 18 Oct 2025 14:57:55 +0800</lastBuildDate><atom:link href="https://yz627.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>博客标题</title><link>https://yz627.github.io/posts/go/test/</link><pubDate>Sat, 18 Oct 2025 14:57:55 +0800</pubDate><guid>https://yz627.github.io/posts/go/test/</guid><description>&lt;p&gt;这是摘要&lt;/p&gt;</description></item><item><title>博客标题</title><link>https://yz627.github.io/posts/daily/test/</link><pubDate>Sat, 18 Oct 2025 14:55:19 +0800</pubDate><guid>https://yz627.github.io/posts/daily/test/</guid><description>&lt;p&gt;这是摘要&lt;/p&gt;</description></item><item><title>博客标题</title><link>https://yz627.github.io/posts/go/test1/</link><pubDate>Fri, 18 Oct 2024 14:57:55 +0800</pubDate><guid>https://yz627.github.io/posts/go/test1/</guid><description>&lt;p&gt;这是摘要&lt;/p&gt;</description></item><item><title>关于我</title><link>https://yz627.github.io/about/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://yz627.github.io/about/</guid><description>&lt;h2 id="你好我是-zy"&gt;你好，我是 zy&lt;/h2&gt;
+&lt;p&gt;欢迎来到我的个人博客！这里记录着我的学习心得、技术分享和生活感悟。&lt;/p&gt;
+&lt;h3 id="关于这个博客"&gt;关于这个博客&lt;/h3&gt;
+&lt;p&gt;这个博客使用 &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 静态网站生成器构建，主题是 &lt;a href="https://github.com/joway/hugo-theme-yinyang"&gt;YinYang&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id="技术栈"&gt;技术栈&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;静态网站生成器&lt;/strong&gt;: Hugo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主题&lt;/strong&gt;: YinYang&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署&lt;/strong&gt;: GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="联系方式"&gt;联系方式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href="https://github.com/yz627"&gt;yz627&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="其他"&gt;其他&lt;/h3&gt;
+&lt;p&gt;如果你有任何问题或建议，欢迎通过 GitHub 联系我。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;最后更新: 2025年10月&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
