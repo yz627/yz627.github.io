@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>yzBlog</title><link>https://yz627.github.io/</link><description>Recent content on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 19 Oct 2025 16:07:38 +0800</lastBuildDate><atom:link href="https://yz627.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>开始我的记录</title><link>https://yz627.github.io/first_blog/</link><pubDate>Sun, 19 Oct 2025 16:07:38 +0800</pubDate><guid>https://yz627.github.io/first_blog/</guid><description>&lt;h2 id="开始我的记录"&gt;开始我的记录&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>yzBlog</title><link>https://yz627.github.io/</link><description>Recent content on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 19 Oct 2025 16:07:38 +0800</lastBuildDate><atom:link href="https://yz627.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>开始我的记录</title><link>https://yz627.github.io/posts/daily/first_blog/</link><pubDate>Sun, 19 Oct 2025 16:07:38 +0800</pubDate><guid>https://yz627.github.io/posts/daily/first_blog/</guid><description>&lt;h2 id="开始我的记录"&gt;开始我的记录&lt;/h2&gt;
 &lt;p&gt;博客的基本框架搭建完成，开始记录一些自己的学习笔记。&lt;/p&gt;</description></item><item><title>关于我</title><link>https://yz627.github.io/about/</link><pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate><guid>https://yz627.github.io/about/</guid><description>&lt;h3 id="你好我是-zy"&gt;你好，我是 zy&lt;/h3&gt;
 &lt;p&gt;欢迎来到我的个人博客！这里记录着我的学习、工作和生活感悟。&lt;/p&gt;
 &lt;p&gt;我是一名喜欢自由的开发者，平常喜欢旅游、游戏、种植和研究新的技术。说实话，很多时候我也都质疑过自己是否适合成为一个开发者，但是为什么还是选择 developer 呢？也许有自己的向往，也许有无可奈何。最然很多时候有过质疑，但是当我在研究新的语言、框架、技术时，我感到很痴迷。无论如何这也是我自己的选择。&lt;/p&gt;
@@ -6,5 +6,5 @@
 &lt;p&gt;这个博客的灵感来源于 &lt;a href="https://blog.wohin.me/"&gt;Fernweh&lt;/a&gt;。折腾这个博客的时候也花费了不少的时候，但是很多时候发现其实我遇到的问题网上都有很好的解决方案，以至于后续发现很多时间都是浪费的。
 这个博客的目的就是能够记录自己的学习、工作、生活思考和感想。由于很多时候自己的记录很散乱，因此希望通过这里 accumulate 一些自己的思考和感想。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;a href="mailto:%3Czay85840zhangy@163.com%3E"&gt;联系我&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;邮箱&lt;/strong&gt;: &lt;a href="zay85840zhangy@163.com"&gt;zay85840zhangy@163.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;最后更新: 2025年10月&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
