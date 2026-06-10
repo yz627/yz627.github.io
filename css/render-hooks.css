@@ -1,0 +1,69 @@
+/* ===========================
+   Render Hooks
+   =========================== */
+
+/* --- Image Hook --- */
+.rh-image {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.rh-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.rh-image figcaption {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+}
+
+/* --- External Link --- */
+.external-link::after {
+  content: "\2197";
+  font-size: 0.7em;
+  margin-left: 2px;
+  vertical-align: super;
+}
+
+/* --- Code Block Hook --- */
+.rh-codeblock {
+  margin: 1.5rem 0;
+}
+
+.rh-codeblock-headed .highlight {
+  margin-top: 0;
+}
+
+.rh-codeblock-headed .highlight pre {
+  border-radius: 0 0 10px 10px;
+}
+
+.rh-codeblock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  background: var(--color-code-background);
+  border-bottom: 1px solid var(--color-blockquote-border);
+  border-radius: 10px 10px 0 0;
+}
+
+.rh-codeblock-lang {
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rh-codeblock-filename {
+  color: var(--color-text);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.rh-codeblock .highlight {
+  margin: 1.5rem 0;
+}
