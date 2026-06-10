@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on yzBlog</title><link>https://yz627.github.io/categories/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 10 Jun 2026 15:00:00 +0800</lastBuildDate><atom:link href="https://yz627.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Shortcodes 测试</title><link>https://yz627.github.io/posts/daily/hugo-shortcodes-test/</link><pubDate>Wed, 10 Jun 2026 15:00:00 +0800</pubDate><guid>https://yz627.github.io/posts/daily/hugo-shortcodes-test/</guid><description>&lt;p&gt;本文用于测试所有自定义 Hugo Shortcodes 的效果。&lt;/p&gt;
+&lt;h2 id="admonition-提示框"&gt;Admonition 提示框&lt;/h2&gt;
+&lt;div class="admonition admonition-note"&gt;
+ &lt;div class="admonition-title"&gt;
+ &lt;span class="admonition-icon"&gt;ℹ️&lt;/span&gt;
+ &lt;span&gt;信息&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="admonition-content"&gt;
+ 这是一条 &lt;strong&gt;信息&lt;/strong&gt; 提示框，用于补充说明。
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="admonition admonition-tip"&gt;
+ &lt;div class="admonition-title"&gt;
+ &lt;span class="admonition-icon"&gt;💡&lt;/span&gt;
+ &lt;span&gt;小技巧&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="admonition-content"&gt;
+ 使用 &lt;code&gt;hugo new&lt;/code&gt; 命令可以快速创建文章模板。
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="admonition admonition-warning"&gt;
+ &lt;div class="admonition-title"&gt;
+ &lt;span class="admonition-icon"&gt;⚠️&lt;/span&gt;
+ &lt;span&gt;警告&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="admonition-content"&gt;
+ 请注意备份你的配置文件，升级前务必确认兼容性。
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="admonition admonition-danger"&gt;
+ &lt;div class="admonition-title"&gt;
+ &lt;span class="admonition-icon"&gt;🚫&lt;/span&gt;
+ &lt;span&gt;危险操作&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="admonition-content"&gt;
+ 执行 &lt;code&gt;rm -rf&lt;/code&gt; 前请三思，此操作不可撤销！
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="tabs-多语言代码对比"&gt;Tabs 多语言代码对比&lt;/h2&gt;
+&lt;p&gt;下面展示 Hello World 在不同语言中的写法：&lt;/p&gt;
+&lt;div class="shortcode-tabs"&gt;
+ &lt;div class="shortcode-tabs-nav" role="tablist"&gt;&lt;/div&gt;
+ &lt;div class="shortcode-tabs-content"&gt;
+ 
+&lt;div class="shortcode-tab-panel" data-tab-name="Go" role="tabpanel"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="shortcode-tab-panel" data-tab-name="Python" role="tabpanel"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="shortcode-tab-panel" data-tab-name="JavaScript" role="tabpanel"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class="shortcode-tab-panel" data-tab-name="Rust" role="tabpanel"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-rust" data-lang="rust"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;println!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="video-视频嵌入"&gt;Video 视频嵌入&lt;/h2&gt;
+&lt;h3 id="bilibili"&gt;Bilibili&lt;/h3&gt;
+&lt;div class="shortcode-video"&gt;
+ &lt;iframe
+ src="https://player.bilibili.com/player.html?bvid=BV1GJ411x7h7&amp;page=1&amp;high_quality=1&amp;danmaku=0"
+ allowfullscreen="true"
+ scrolling="no"
+ frameborder="0"
+ sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"
+ loading="lazy"
+ &gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id="youtube"&gt;YouTube&lt;/h3&gt;
+&lt;div class="shortcode-video"&gt;
+ &lt;iframe
+ src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+ title="YouTube Video"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen
+ loading="lazy"
+ &gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id="gallery-图片画廊"&gt;Gallery 图片画廊&lt;/h2&gt;
+&lt;p&gt;使用占位图片测试画廊布局：&lt;/p&gt;</description></item></channel></rss>

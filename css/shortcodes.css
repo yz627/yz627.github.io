@@ -1,0 +1,220 @@
+/* Hugo Shortcodes 样式 */
+
+/* ===========================
+   Admonition 提示/警告框
+   =========================== */
+
+.admonition {
+  margin: 1.2em 0;
+  border-left: 4px solid;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.admonition-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.admonition-icon {
+  flex-shrink: 0;
+}
+
+.admonition-content {
+  padding: 8px 12px 12px;
+}
+
+.admonition-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* 亮色主题 */
+.admonition-note    { border-color: #2196f3; background: #e3f2fd; }
+.admonition-tip     { border-color: #4caf50; background: #e8f5e9; }
+.admonition-warning { border-color: #ff9800; background: #fff3e0; }
+.admonition-danger  { border-color: #f44336; background: #ffebee; }
+
+.admonition-note    .admonition-title { color: #1565c0; }
+.admonition-tip     .admonition-title { color: #2e7d32; }
+.admonition-warning .admonition-title { color: #e65100; }
+.admonition-danger  .admonition-title { color: #c62828; }
+
+/* 暗色主题 */
+[data-theme="dark"] .admonition-note    { background: #1a2332; border-color: #42a5f5; }
+[data-theme="dark"] .admonition-tip     { background: #1a2e1e; border-color: #66bb6a; }
+[data-theme="dark"] .admonition-warning { background: #2e2210; border-color: #ffa726; }
+[data-theme="dark"] .admonition-danger  { background: #2e1515; border-color: #ef5350; }
+
+[data-theme="dark"] .admonition-note    .admonition-title { color: #90caf9; }
+[data-theme="dark"] .admonition-tip     .admonition-title { color: #a5d6a7; }
+[data-theme="dark"] .admonition-warning .admonition-title { color: #ffcc80; }
+[data-theme="dark"] .admonition-danger  .admonition-title { color: #ef9a9a; }
+
+/* ===========================
+   Gallery 图片画廊
+   =========================== */
+
+.shortcode-gallery {
+  display: grid;
+  gap: 8px;
+  margin: 1.2em 0;
+}
+
+.shortcode-gallery-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.shortcode-gallery-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.shortcode-gallery-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+.shortcode-gallery-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.shortcode-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.shortcode-gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+.shortcode-gallery-item figcaption {
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--color-muted);
+  padding: 4px 0;
+}
+
+/* 灯箱 */
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gallery-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* ===========================
+   Tabs 标签页
+   =========================== */
+
+.shortcode-tabs {
+  margin: 1.2em 0;
+  border: 1px solid var(--color-blockquote-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.shortcode-tabs-nav {
+  display: flex;
+  background: var(--color-control-background);
+  border-bottom: 1px solid var(--color-blockquote-border);
+  overflow-x: auto;
+}
+
+.shortcode-tab-btn {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  color: var(--color-muted);
+  font: inherit;
+  font-size: 0.9em;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.shortcode-tab-btn:hover {
+  color: var(--color-text);
+  background: var(--color-control-hover);
+}
+
+.shortcode-tab-btn.active {
+  color: var(--color-text);
+  font-weight: 600;
+  border-bottom-color: var(--color-text);
+}
+
+.shortcode-tab-panel {
+  display: none;
+}
+
+.shortcode-tab-panel.active {
+  display: block;
+}
+
+.shortcode-tab-panel > .highlight {
+  margin: 0;
+  border-radius: 0;
+}
+
+.shortcode-tab-panel > .highlight pre {
+  margin: 0;
+  border-radius: 0;
+}
+
+.shortcode-tabs-content > .shortcode-tab-panel > p:first-child {
+  margin-top: 0;
+}
+
+/* ===========================
+   Video 视频嵌入
+   =========================== */
+
+.shortcode-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 1.2em 0;
+  border-radius: 8px;
+  background: #000;
+}
+
+.shortcode-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ===========================
+   响应式
+   =========================== */
+
+@media (max-width: 600px) {
+  .shortcode-gallery-cols-3,
+  .shortcode-gallery-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
