@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MCP on yzBlog</title><link>https://yz627.github.io/tags/mcp/</link><description>Recent content in MCP on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yz627.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 开发核心概念速览：从 Prompt 到 MCP</title><link>https://yz627.github.io/posts/agent/ai-concepts-glossary/</link><pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate><guid>https://yz627.github.io/posts/agent/ai-concepts-glossary/</guid><description>&lt;p&gt;AI 开发领域涌现了大量新概念，很多术语看起来各自独立，实际上层层递进、互相关联。本文梳理六个最核心的概念，帮你建立一张完整的认知地图。&lt;/p&gt;
+&lt;h2 id="prompt与-ai-对话的起点"&gt;Prompt：与 AI 对话的起点&lt;/h2&gt;
+&lt;p&gt;Prompt 是用户提供给 AI 模型的输入文本，用于描述任务、设定语境、约束输出格式或引导推理方向。它是人类意图与模型能力之间的翻译层。&lt;/p&gt;
+&lt;p&gt;大语言模型本质上是自回归的概率预测器——给定前文序列，计算下一个词的概率分布。Prompt 中的每个词都会通过 Transformer 的注意力机制与其他词交互，改变隐层表征，从而影响输出。&lt;/p&gt;
+&lt;p&gt;一个好的 Prompt 能将模型的注意力集中到训练数据中与任务相关的特定模式上。比如加上&amp;quot;让我们一步步思考&amp;quot;，模型的预测概率分布就会从&amp;quot;直接猜答案&amp;quot;切换为&amp;quot;复现解题过程&amp;quot;的模式。这就是所谓的&amp;quot;咒语&amp;quot;背后的数学逻辑。&lt;/p&gt;
+&lt;h2 id="agent从会聊天到能做事"&gt;Agent：从&amp;quot;会聊天&amp;quot;到&amp;quot;能做事&amp;quot;&lt;/h2&gt;
+&lt;p&gt;Agent（智能体）是能够围绕目标自主完成任务的智能系统。&lt;/p&gt;
+&lt;p&gt;如果说大语言模型擅长&amp;quot;理解与生成&amp;quot;，Agent 则更进一步：它在 LLM 的基础上，结合&lt;strong&gt;任务规划、工具调用、记忆管理、环境反馈&lt;/strong&gt;等能力，形成一个完整的&amp;quot;感知—决策—行动—迭代&amp;quot;闭环。&lt;/p&gt;
+&lt;p&gt;Agent 不是单纯的&amp;quot;会聊天的模型&amp;quot;，而是一个&lt;strong&gt;面向目标执行任务的系统形态&lt;/strong&gt;。你给它一个目标，它会自己拆解步骤、调用工具、处理异常、迭代推进，直到任务完成。&lt;/p&gt;
+&lt;h2 id="rag给-ai-加上查资料的能力"&gt;RAG：给 AI 加上&amp;quot;查资料&amp;quot;的能力&lt;/h2&gt;
+&lt;p&gt;RAG（Retrieval-Augmented Generation，检索增强生成）是一种将信息检索与大语言模型生成结合的系统架构。&lt;/p&gt;
+&lt;p&gt;核心思路很简单：在模型生成答案之前，先从外部知识库中检索出与当前问题最相关的文档片段，再把这些内容与用户问题一起提供给模型，让它基于检索到的资料生成更准确、更可控的回答。&lt;/p&gt;
+&lt;p&gt;可以把 RAG 理解为给 LLM 增加了一个&amp;quot;先查资料，再回答&amp;quot;的能力层。这解决了 LLM 的两个核心短板：知识过时和幻觉问题。模型不再只依赖训练时学到的知识，而是能实时引用最新的、特定领域的内容。&lt;/p&gt;
+&lt;h2 id="function-calling让-ai-调用外部工具"&gt;Function Calling：让 AI 调用外部工具&lt;/h2&gt;
+&lt;p&gt;Function Calling 让大语言模型能以结构化方式请求调用外部函数或工具。&lt;/p&gt;
+&lt;p&gt;它并非让模型直接执行函数，而是让模型在需要时输出一个包含函数名和参数的标准化数据（如 JSON），由应用程序代码来实际执行。&lt;/p&gt;
+&lt;p&gt;这相当于定义了大模型调用工具的接口结构。有了 Function Calling，LLM 不再只是一个文本生成器，而是可以触发数据库查询、API 调用、文件操作等真实动作。Agent 的&amp;quot;工具调用&amp;quot;能力，底层往往就依赖 Function Calling 机制。&lt;/p&gt;
+&lt;h2 id="mcp统一-ai-的连接标准"&gt;MCP：统一 AI 的连接标准&lt;/h2&gt;
+&lt;p&gt;MCP（Model Context Protocol，模型上下文协议）是一种开放式协议，用来规范应用程序向 LLM 提供上下文与工具能力的方式。&lt;/p&gt;
+&lt;p&gt;可以把 MCP 想象为&amp;quot;AI 应用的 USB-C 接口&amp;quot;：统一连接方式，让模型能以标准化结构访问数据源与工具。&lt;/p&gt;
+&lt;p&gt;MCP 架构分为两端：&lt;/p&gt;</description></item></channel></rss>
