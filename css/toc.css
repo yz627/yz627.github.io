@@ -138,40 +138,40 @@
    桌面端（≥1280px）：左侧固定，正文右移
    ========================================================= */
 @media (min-width: 1280px) {
-  body {
+  body.has-toc {
     padding-left: 260px;
     transition: padding-left 0.28s ease;
   }
 
   /* 收起状态：TOC 缩成一条窄条，仅露按钮 */
-  body.toc-collapsed .toc-aside {
+  body.has-toc.toc-collapsed .toc-aside {
     width: 48px;
   }
 
-  body.toc-collapsed {
+  body.has-toc.toc-collapsed {
     padding-left: 48px;
   }
 
-  body.toc-collapsed .toc-toggle {
+  body.has-toc.toc-collapsed .toc-toggle {
     padding: 0.75rem 0;
     justify-content: center;
   }
 
-  body.toc-collapsed .toc-toggle-title {
+  body.has-toc.toc-collapsed .toc-toggle-title {
     display: none;
   }
 
-  body.toc-collapsed .toc-toggle-icon {
+  body.has-toc.toc-collapsed .toc-toggle-icon {
     transform: rotate(90deg);
     margin-left: 0;
   }
 
-  body.toc-collapsed .toc-content {
+  body.has-toc.toc-collapsed .toc-content {
     display: none;
   }
 
   /* 收起按钮 hover 提示 */
-  body.toc-collapsed .toc-toggle:hover::after {
+  body.has-toc.toc-collapsed .toc-toggle:hover::after {
     content: "展开目录";
     position: absolute;
     left: 48px;
@@ -187,7 +187,7 @@
     pointer-events: none;
   }
 
-  body.toc-collapsed .toc-toggle {
+  body.has-toc.toc-collapsed .toc-toggle {
     position: relative;
   }
 }
@@ -197,18 +197,18 @@
    ========================================================= */
 @media (max-width: 1279px) {
   /* 默认抽屉关闭：滑出视口左侧 */
-  .toc-aside {
+  body.has-toc .toc-aside {
     transform: translateX(-100%);
     box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
   }
 
   /* 打开状态：滑入 */
-  body.toc-open .toc-aside {
+  body.has-toc.toc-open .toc-aside {
     transform: translateX(0);
   }
 
   /* 遮罩：点击可关闭 */
-  body.toc-open .toc-backdrop {
+  body.has-toc.toc-open .toc-backdrop {
     display: block;
     position: fixed;
     inset: 0;
@@ -218,7 +218,7 @@
   }
 
   /* 浮动按钮：始终显示在左上角 */
-  .toc-toggle {
+  body.has-toc .toc-toggle {
     position: fixed;
     top: 0.75rem;
     left: 0.75rem;
@@ -233,17 +233,17 @@
     z-index: 101;
   }
 
-  .toc-toggle-title {
+  body.has-toc .toc-toggle-title {
     display: none;
   }
 
-  .toc-toggle-icon {
+  body.has-toc .toc-toggle-icon {
     margin-left: 0;
     font-size: 0.9rem;
   }
 
   /* 抽屉打开时，按钮回到抽屉内（恢复原布局） */
-  body.toc-open .toc-toggle {
+  body.has-toc.toc-open .toc-toggle {
     position: static;
     width: auto;
     height: auto;
@@ -254,11 +254,11 @@
     justify-content: space-between;
   }
 
-  body.toc-open .toc-toggle-title {
+  body.has-toc.toc-open .toc-toggle-title {
     display: block;
   }
 
-  body.toc-open .toc-toggle-icon {
+  body.has-toc.toc-open .toc-toggle-icon {
     transform: rotate(180deg);
   }
 }
@@ -269,7 +269,7 @@
   .toc-backdrop {
     display: none !important;
   }
-  body {
+  body.has-toc {
     padding-left: 0 !important;
   }
 }
