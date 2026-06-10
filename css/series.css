@@ -1,0 +1,172 @@
+/* =========================================================
+   Series Navigation - 系列文章上下篇导航
+   ========================================================= */
+
+.series-nav {
+  margin: 2.5rem 0 1.5rem;
+  padding: 1.25rem 1rem;
+  background: var(--color-control-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.series-nav-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.series-nav-prev,
+.series-nav-next {
+  min-width: 0;
+}
+
+.series-nav-prev {
+  text-align: left;
+}
+
+.series-nav-next {
+  text-align: right;
+}
+
+.series-nav-info {
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.series-nav a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.series-nav a:hover {
+  color: var(--color-link);
+  font-weight: normal;
+}
+
+.series-nav a:hover .series-nav-title {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.series-nav-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 0.15rem;
+  font-weight: normal;
+}
+
+.series-nav-title {
+  display: block;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.series-nav-name {
+  display: block;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.series-nav-name:hover {
+  text-decoration: underline;
+  color: var(--color-link);
+}
+
+.series-nav-pos {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+/* 无上一篇 / 无下一篇时保留占位，让 info 保持居中 */
+.series-nav-prev:empty,
+.series-nav-next:empty {
+  visibility: hidden;
+}
+
+/* 移动端：纵向堆叠 */
+@media (max-width: 600px) {
+  .series-nav-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .series-nav-info {
+    order: -1;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .series-nav-prev,
+  .series-nav-next {
+    text-align: left;
+  }
+
+  .series-nav-next {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .series-nav-title {
+    white-space: normal;
+  }
+}
+
+/* =========================================================
+   Series Mark - 列表页系列标记徽章
+   ========================================================= */
+
+.posts-series-mark {
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  padding: 0.15rem 0.55rem;
+  margin-left: 0.5rem;
+  background: var(--color-text);
+  color: var(--color-background);
+  border-radius: 10px;
+  text-decoration: none;
+  vertical-align: middle;
+  font-weight: 500;
+  transition: opacity 0.15s, background 0.15s, color 0.15s;
+}
+
+.posts-series-mark:hover {
+  opacity: 0.8;
+  color: var(--color-background);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.posts-series-mark .series-mark-icon {
+  margin-right: 0.2rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+/* 首页 category 列内的 series-mark：占满宽度，块状 */
+.posts-categories .posts-series-mark {
+  display: block;
+  margin: 4px 0 0 0;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 2px 4px;
+}
+
+.posts-categories .posts-series-mark .series-mark-icon {
+  display: none;
+}
+
