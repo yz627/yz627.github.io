@@ -170,3 +170,110 @@
   display: none;
 }
 
+/* =========================================================
+   Series Taxonomy Pages - /series/ 与 /series/<name>/
+   ========================================================= */
+
+.series-back {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.series-back a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.series-back a:hover {
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+.series-terms-desc,
+.series-list-desc {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin: -0.5rem 0 1.5rem;
+}
+
+.series-terms-empty {
+  color: var(--color-muted);
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.series-terms-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.series-term-card {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: var(--color-control-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.series-term-card:hover {
+  background: var(--color-control-hover);
+  border-color: var(--color-link);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.series-term-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+
+.series-term-meta {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.series-term-sep {
+  opacity: 0.5;
+}
+
+.series-list-line {
+  align-items: baseline;
+}
+
+.series-list-idx {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.series-list-total {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 600px) {
+  .series-terms-list {
+    grid-template-columns: 1fr;
+  }
+
+  .series-list-idx {
+    display: none;
+  }
+}
+
+
