@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agent on yzBlog</title><link>https://yz627.github.io/categories/agent/</link><description>Recent content in Agent on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yz627.github.io/categories/agent/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw 配置汇总：openclaw.json 完整指南</title><link>https://yz627.github.io/posts/openclaw/openclaw-config-summary/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://yz627.github.io/posts/openclaw/openclaw-config-summary/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI-Agent on yzBlog</title><link>https://yz627.github.io/tags/ai-agent/</link><description>Recent content in AI-Agent on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yz627.github.io/tags/ai-agent/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw 配置汇总：openclaw.json 完整指南</title><link>https://yz627.github.io/posts/openclaw/openclaw-config-summary/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://yz627.github.io/posts/openclaw/openclaw-config-summary/</guid><description>&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;openclaw.json&lt;/code&gt; 是 OpenClaw 的核心配置文件，存放于 &lt;code&gt;~/.openclaw/openclaw.json&lt;/code&gt;，支持 JSON 和 JSON5 格式。所有字段均为可选，省略时使用安全默认值。本文按模块逐一汇总各配置项。&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
@@ -91,24 +91,4 @@
 &lt;/div&gt;
 
 &lt;h2 id="agents--代理配置"&gt;agents — 代理配置&lt;/h2&gt;
-&lt;p&gt;定义 AI Agent 的默认参数、代理列表与路由绑定。&lt;/p&gt;</description></item><item><title>架构图渲染测试</title><link>https://yz627.github.io/posts/agent/arch-diagram-test/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://yz627.github.io/posts/agent/arch-diagram-test/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;目的&lt;/strong&gt;：验证 &lt;code&gt;render-codeblock&lt;/code&gt; 钩子对架构图的自动检测、显式 &lt;code&gt;```arch&lt;/code&gt; 标记、以及 &lt;code&gt;arch&lt;/code&gt; shortcode 的三种触发方式是否均能统一渲染为深色主题图框。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id="1-自动检测方框字符"&gt;1. 自动检测：方框字符&lt;/h2&gt;
-&lt;p&gt;只要代码块中出现 &lt;code&gt;┌ ┐ └ ┘&lt;/code&gt; 等方框字符，就会自动被识别为架构图，无需任何语言标签。&lt;/p&gt;
-&lt;div class="arch-diagram arch-dark" &gt;
- &lt;div class="arch-body"&gt;&lt;pre&gt;&lt;code&gt;┌─────────────────────────────────────────────────────┐
-│ 用户交互层 │
-│ (Web UI / CLI / IM Channels) │
-├─────────────────────────────────────────────────────┤
-│ Gateway 网关层 │
-│ (统一通信 / 适配器模式 / ChannelPlugin) │
-│ Bindings 路由 ── 按渠道分发消息到对应 Agent │
-│ Mappings ── 消息路由到正确的 Agent │
-├─────────────────────────────────────────────────────┤
-│ Agent 核心层 │
-│ ┌───────────┐ ┌──────────┐ ┌──────────────┐ │
-│ │ 规划引擎 │ │ 记忆系统 │ │ 工具管理 │ │
-│ └───────────┘ └──────────┘ └──────────────┘ │
-└─────────────────────────────────────────────────────┘&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id="2-自动检测流程箭头--连接符"&gt;2. 自动检测：流程箭头 + 连接符&lt;/h2&gt;
-&lt;p&gt;包含 &lt;code&gt;▼&lt;/code&gt; 等箭头并配合 &lt;code&gt;├ └ │ ─&lt;/code&gt; 连接符的流程图也会被自动识别。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;定义 AI Agent 的默认参数、代理列表与路由绑定。&lt;/p&gt;</description></item></channel></rss>
