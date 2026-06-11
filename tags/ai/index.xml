@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on yzBlog</title><link>https://yz627.github.io/tags/ai/</link><description>Recent content in AI on yzBlog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yz627.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Cursor Agent 体系全景汇总</title><link>https://yz627.github.io/posts/cursor/cursor-agent-overview/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://yz627.github.io/posts/cursor/cursor-agent-overview/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;更新日期&lt;/strong&gt;: 2026-06-09
-&lt;strong&gt;适用版本&lt;/strong&gt;: Cursor 3.x
-&lt;strong&gt;参考&lt;/strong&gt;：&lt;a href="https://cursor.com/cn/docs" target="_blank" rel="noopener noreferrer" class="external-link"&gt;Cursor&lt;/a&gt;
-&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;更新日期&lt;/strong&gt;: 2026-06-09&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用版本&lt;/strong&gt;: Cursor 3.x&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;参考&lt;/strong&gt;：&lt;a href="https://cursor.com/cn/docs" target="_blank" rel="noopener noreferrer" class="external-link"&gt;Cursor&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
 &lt;h2 id="总览"&gt;总览&lt;/h2&gt;
 &lt;p&gt;Cursor 的 Agent 体系不是单一功能，而是一套分层的能力架构。从最轻量的行为约束（Rules）到完全自主的云端自动化（Automations），覆盖了从&amp;quot;微调 AI 行为&amp;quot;到&amp;quot;AI 替你值守&amp;quot;的完整光谱。下表给出全局视图，后续逐一展开。&lt;/p&gt;
 &lt;table&gt;
